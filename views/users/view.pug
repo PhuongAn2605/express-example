@@ -1,0 +1,14 @@
+extends ../layouts/common.pug
+
+block content
+	h2 View users
+
+	table.table
+		tr
+			th Name
+			th Phone
+			th ID
+		tr
+			td= user.name
+			td= user.phone
+			td= user.id

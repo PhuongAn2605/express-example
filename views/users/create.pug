@@ -8,10 +8,10 @@ block content
 			.alert.alert-danger= error
 
 	form(action="/users/create", method="POST")
-		.from-group
+		.form-group
 			label(for="name") Name
-			input#name.form-control(type="text", name="name", value=values ? values.name : '')
+			input#name.form-control(type="text", name="name", value=values ? values.name : "")
 
 			label(for="phone") Phone
-			input#phone(type="number", name="phone", class="form-control mb-2", value= values ? values.phone : '')
+			input#phone.form-control(type="number", name="phone", class="form-control mb-2", value= values ? values.phone : "")
 			button(class="btn-primary") Create

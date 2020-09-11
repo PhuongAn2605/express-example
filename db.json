@@ -6,7 +6,9 @@
     },
     {
       "name": "An Phuong",
-      "id": "kPHPOwNtY"
+      "id": "kPHPOwNtY",
+      "email": "anphuong2605@gmail.com",
+      "password": "827ccb0eea8a706c4c34a16891f84e7b"
     },
     {
       "name": "Fighting",
@@ -48,6 +50,21 @@
       "name": "565",
       "phone": "54444444444444",
       "id": "XAqsa8IPv"
+    },
+    {
+      "name": "Phương An",
+      "phone": "008834322",
+      "id": "Z7TBbX689"
+    },
+    {
+      "name": "4466",
+      "phone": "556665768",
+      "id": "PMwGidsPF"
+    },
+    {
+      "name": "Huong",
+      "phone": "12903435553",
+      "id": "7uEo8e3Pl"
     }
   ]
 }

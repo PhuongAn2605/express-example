@@ -16,6 +16,19 @@ html
 			if user
 				p= user.name
 
+		nav(aria-label='Page navigation example')
+			ul.pagination
+				li.page-item
+					a.page-link(href='products?page=' + (req.query.page-1)>0 ? req.query.page : 1 ) Previous
+				li.page-item
+					a.page-link(href='/products?page=1') 1
+				li.page-item
+					a.page-link(href='/products?page=2') 2
+				li.page-item
+					a.page-link(href='/products?page=3') 3
+				li.page-item
+					a.page-link(href='/products?page=' + (req.query.page+1)) Next
+
 		.container.pt-5
 			block content
 

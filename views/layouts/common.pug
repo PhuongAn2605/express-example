@@ -3,6 +3,8 @@ html
 		link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" )
 		link(rel="stylesheet", href="/styles/custom.css")
 	body
+		script(language='javascript', src='./custom.js')
+
 		nav.navbar.navbar-expand-lg.navbar-light.bg-light
 			a.navbar-brand(href='#') Navbar
 			button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNav', aria-controls='navbarNav', aria-expanded='false', aria-label='Toggle navigation')
@@ -19,7 +21,7 @@ html
 		nav(aria-label='Page navigation example')
 			ul.pagination
 				li.page-item
-					a.page-link(href='products?page=' + (req.query.page-1)>0 ? req.query.page : 1 ) Previous
+					a.page-link(href= previousPage) Previous
 				li.page-item
 					a.page-link(href='/products?page=1') 1
 				li.page-item
@@ -27,7 +29,7 @@ html
 				li.page-item
 					a.page-link(href='/products?page=3') 3
 				li.page-item
-					a.page-link(href='/products?page=' + (req.query.page+1)) Next
+					a.page-link(href='/products?page=' + nextPage) Next
 
 		.container.pt-5
 			block content
